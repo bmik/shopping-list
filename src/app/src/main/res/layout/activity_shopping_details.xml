@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#007A00"
+    android:padding="20dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/label_bar"
+        >
+
+        <TextView android:id="@+id/text_label_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/text_label_product"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+
+        <TextView android:id="@+id/text_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:text="@string/text_label_quantity"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+
+        <TextView android:id="@+id/text_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:text="@string/text_label_unit"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+
+        <TextView android:id="@+id/text_label_checked"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+
+
+    </LinearLayout>
+
+    <!--<Button android:id="@+id/button_recount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/button_recount"
+        android:onClick="recount"/>-->
+
+    <!--<LinearLayout android:id="@+id/overall_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#EFEFB2"
+        android:layout_above="@id/button_recount"
+        android:padding="10px"
+        android:paddingTop="20px"
+        >
+
+        <TextView android:id="@+id/text_overall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_overall"
+            android:textSize="20sp"
+            android:layout_gravity="right"/>
+
+        <TextView android:id="@+id/value_overall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="right"
+            android:text=" 0,00 zł"
+            />
+
+    </LinearLayout>-->
+
+    <ListView android:id="@+id/list_shopping_details_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp"
+        android:background="#EFEFB2"
+        android:layout_below="@id/label_bar"
+        android:padding="10px"
+        android:descendantFocusability="afterDescendants"
+        android:focusable="false"
+        >
+
+    </ListView>
+
+
+
+</RelativeLayout>

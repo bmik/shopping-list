@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#007A00"
+    android:padding="20dp">
+
+    <TextView android:id="@+id/shop_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+
+        android:text="@string/text_shop_choose_list"
+        android:textSize="26sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#cce4cc"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shop_title"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:background="#EFEFB2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Twoje listy:"
+            android:textSize="24sp"
+            android:textColor="#3D3D00"
+            />
+
+        <ListView android:id="@+id/list_shopping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

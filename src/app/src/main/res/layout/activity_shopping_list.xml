@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#007A00"
+    android:padding="20dp">
+
+    <!--<TextView android:id="@+id/text_shopping_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/text_shopping_list_title"
+        android:textSize="16sp"/>
+
+    <TextView android:id="@+id/text_shopping_list_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+
+    <TextView android:id="@+id/text_shopping_list_date_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/text_shopping_list_date"
+        android:layout_marginRight="10dp"
+
+        android:text="@string/text_shopping_list_from_date"/>-->
+
+    <LinearLayout android:id="@+id/edit_bar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#cfcf85"
+        >
+
+        <EditText android:id="@+id/edit_product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_product"
+            android:textColor="@color/material_blue_grey_900"
+            android:textColorHint="#717171"
+            android:textSize="12sp"
+            />
+
+        <EditText android:id="@+id/edit_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:hint="@string/hint_quantity"
+            android:textColor="@color/material_blue_grey_900"
+            android:textColorHint="#717171"
+            android:textSize="12sp"
+            />
+
+        <Spinner android:id="@+id/spinner_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:textSize="12sp"
+            android:textColor="@color/material_blue_grey_900"
+            android:entries="@array/units_array">
+
+        </Spinner>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:src="@drawable/plus"
+            android:onClick="add"
+            android:contentDescription="@string/plus_button" />
+
+
+
+    </LinearLayout>
+
+    <Button android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:text="@string/button_save"
+
+        android:onClick="save"/>
+
+    <ListView android:id="@+id/list_shopping_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_bar"
+        android:layout_above="@id/button_save"
+        android:background="#EFEFB2">
+
+    </ListView>
+
+</RelativeLayout>
